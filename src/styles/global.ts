@@ -2,6 +2,14 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
 
+:root {
+  --dark-100: #141C2F;
+  --dark-90: #1F2A48;
+  --white-90: #F5F8FF;
+  --white-95: #FEFEFE;
+  --blue-90: #0379FE;
+  --grey: #6F798C;
+}
 
 * {
   box-sizing: border-box;
@@ -27,7 +35,7 @@ body {
   -webkit-font-smoothing: antialiased;
   height: 100%;
   position: relative;
-  background: #F0F2F5;
+  background: var(--dark-100);
 }
 
 img,
